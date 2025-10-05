@@ -1,0 +1,283 @@
+/* =======================================
+   Color Theme Setup
+======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #2563EB; /* Deep Blue for main accents */
+    --secondary-color: #94A3B8; /* Soft Gray Blue for neutral areas */
+    --accent-color: #FB923C; /* Soft Orange for highlights */
+    --background-color: #FFFFFF; /* Base background color */
+    --text-color: #222222; /* Default text color */
+}
+
+/* =======================================
+   Global Reset & Typography
+======================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =======================================
+   Header Navigation (Fixed at Top)
+======================================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    z-index: 1000;
+}
+
+.header__logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav__list a:hover {
+    color: var(--accent-color);
+}
+
+/* Keep main content clear of fixed header/footer */
+main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex: 1;
+}
+
+/* =======================================
+   Hero Section
+======================================= */
+.hero {
+    background-color: #EEF2FF;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Keep aspect ratio while filling space */
+  max-height: 450px; /* Prevent overly tall banners */
+}
+
+/* =======================================
+   News Section
+======================================= */
+.news {
+    background-color: #F8FAFC;
+    padding: 3rem 2rem;
+}
+
+.news__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.news__card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+.news__headline {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.news__date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.6rem;
+}
+
+.news__image {
+    background-color: var(--secondary-color);
+    height: 130px;
+    border-radius: 6px;
+}
+
+/* =======================================
+   Footer Section (Fixed at Bottom)
+======================================= */
+.footer {
+  position: static; /* footer will follow page content */
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  border-top: 3px solid var(--secondary-color);
+  color: #fff;
+}
+
+
+.footer__contact,
+.footer__hours {
+    max-width: 300px;
+}
+
+.footer__contact h3,
+.footer__hours h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #fff;
+}
+
+.footer__contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer__contact a:hover {
+    text-decoration: underline;
+    color: #FFD8A8;
+}
+
+/* =======================================
+   Buttons & Input Fields
+======================================= */
+button,
+.btn {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #EA580C; /* Slightly darker on hover */
+    transform: scale(1.03);
+}
+
+/* Text inputs and search bars */
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 0.6rem;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* =======================================
+   Responsive Layout
+======================================= */
+
+/* For tablets */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__list {
+        margin-top: 0.8rem;
+        gap: 1.2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .header {
+        padding: 0.8rem;
+    }
+
+    .hero {
+        height: 240px;
+    }
+
+    .news {
+        padding: 1.5rem;
+    }
+
+    .news__title {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__contact,
+    .footer__hours {
+        margin-bottom: 0.8rem;
+    }
+}

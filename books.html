@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vallejo Public Library - Books</title>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/books.css"/>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header__logo">Vallejo Public Library</div>
+    <nav>
+        <ul class="nav__list">
+            <li><a href="index.html">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Search Bar -->
+    <section class="search">
+        <input type="text" placeholder="Search..." class="search__input">
+    </section>
+
+    <!-- Card Application -->
+    <section class="application">
+        <h2 class="application__title">Card Application</h2>
+        <form class="application__form">
+            <div class="form__row">
+                <div class="form__group">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+                <div class="form__group">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__group">
+                    <label>Zip Code</label>
+                    <input type="text">
+                </div>
+                <div class="form__group">
+                    <label>Address</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__group">
+                    <label>Phone Num</label>
+                    <input type="text">
+                </div>
+                <div class="form__group">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <aside class="application__side">
+            <h3>Already Have a Card?</h3>
+            <p><a href="login.html">Jump to Login</a></p>
+            <p><strong>Instruction:</strong> Please log in using the email address you registered with the Vallejo
+                Public Library. If this is your first time, please click “Create an Account” to register for a new
+                library card.</p>
+        </aside>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations">
+        <h2>Recommended Reads</h2>
+        <div class="book__grid">
+
+            <!-- Book 1: Python Programming -->
+            <article class="book__card">
+                <div class="book__image"
+                     style="background-image: url('images/book-python.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <p><strong>Python Crash Course</strong></p>
+                <p>Author: Eric Matthes</p>
+                <p>ISBN: 9781593279288</p>
+                <p>Pub Date: May 2019</p>
+                <p>Category: Programming / Education</p>
+                <p class="book__desc">
+                    A fast-paced, hands-on introduction to programming with Python.
+                    Learn how to work with data, build web apps, and automate tasks — perfect for beginners and
+                    self-learners.
+                </p>
+                <div class="book__buttons">
+                    <button>Details</button>
+                    <button>Reserve</button>
+                </div>
+            </article>
+
+            <!-- Book 2: Classic Literature -->
+            <article class="book__card">
+                <div class="book__image"
+                     style="background-image: url('images/book-gatsby.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <p><strong>The Great Gatsby</strong></p>
+                <p>Author: F. Scott Fitzgerald</p>
+                <p>ISBN: 9780743273565</p>
+                <p>Pub Date: April 1925</p>
+                <p>Category: Classic / Fiction</p>
+                <p class="book__desc">
+                    Set in the Roaring Twenties, this timeless novel follows Jay Gatsby and his unrelenting pursuit of
+                    love, wealth, and the American Dream.
+                </p>
+                <div class="book__buttons">
+                    <button>Details</button>
+                    <button>Reserve</button>
+                </div>
+            </article>
+
+            <!-- Book 3: Mystery & Thriller -->
+            <article class="book__card">
+                <div class="book__image"
+                     style="background-image: url('images/book-sherlock.jpg'); background-size: cover; background-position: center;">
+                </div>
+                <p><strong>The Adventures of Sherlock Holmes</strong></p>
+                <p>Author: Sir Arthur Conan Doyle</p>
+                <p>ISBN: 9780141034379</p>
+                <p>Pub Date: October 1892</p>
+                <p>Category: Mystery / Detective</p>
+                <p class="book__desc">
+                    The world’s greatest detective takes on twelve thrilling cases filled with deduction, wit, and
+                    suspense.
+                    A must-read for lovers of classic crime fiction.
+                </p>
+                <div class="book__buttons">
+                    <button>Details</button>
+                    <button>Reserve</button>
+                </div>
+            </article>
+
+            <!-- Book 4: Psychology / Social Science -->
+<article class="book__card">
+  <div class="book__image"
+       style="background-image: url('images/book-mind.jpg'); background-size: cover; background-position: center;">
+  </div>
+  <p><strong>The Mind Garden: How Habits Shape Who We Become</strong></p>
+  <p>Author: Dr. Lillian Moore</p>
+  <p>ISBN: 9781987654321</p>
+  <p>Pub Date: February 2024</p>
+  <p>Category: Psychology / Self-Growth</p>
+  <p class="book__desc">
+    Blending neuroscience and everyday reflection, this book explores how small daily habits grow into the patterns that define our identity.
+    Practical, hopeful, and deeply human, it invites readers to cultivate awareness like tending a garden.
+  </p>
+  <div class="book__buttons">
+    <button>Details</button>
+    <button>Reserve</button>
+  </div>
+</article>
+
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__contact">
+        <h3>Address and Contact</h3>
+        <p>505 Santa Clara St, Vallejo, CA 94590</p>
+        <p>Phone: (707) 648-0000</p>
+        <p>Email: <a href="mailto:info@vallejo-library.com">info@vallejo-library.com</a></p>
+    </div>
+    <div class="footer__hours">
+        <h3>Office Hours</h3>
+        <p>Mon–Thu: 9:00 – 19:00</p>
+        <p>Fri–Sat: 10:00 – 17:00</p>
+        <p>Sun: Closed</p>
+    </div>
+</footer>
+</body>
+</html>
