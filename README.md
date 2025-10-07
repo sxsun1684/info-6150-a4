@@ -1,5 +1,9 @@
 ## Live Demo
 [https://info-6150-a4.vercel.app](https://info-6150-a4.vercel.app)
+
+## Image Licenses & Attribution
+All photographs above are provided by Pexels under Creative Commons Zero (CC0) or similar license (free to use). They have been downloaded and are served locally from the images directory in this project.
+ 
 ## Reference
 Pexels. (n.d.). Books and eyeglasses on table [Photograph]. Pexels. https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg
 
