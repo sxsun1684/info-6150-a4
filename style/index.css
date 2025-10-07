@@ -1,6 +1,4 @@
-/* =======================================
-   Color Theme Setup
-======================================= */
+/* Color Theme Setup */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -11,9 +9,7 @@
     --text-color: #222222; /* Default text color */
 }
 
-/* =======================================
-   Global Reset & Typography
-======================================= */
+/* Global Reset & Typography */
 * {
     margin: 0;
     padding: 0;
@@ -77,9 +73,7 @@ main {
     flex: 1;
 }
 
-/* =======================================
-   Hero Section
-======================================= */
+/* Hero Section */
 .hero {
     background-color: #EEF2FF;
     height: 520px;

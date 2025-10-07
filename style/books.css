@@ -1,6 +1,4 @@
-/* =======================================
-   Search Bar
-======================================= */
+/*Search Bar*/
 .search {
     background-color: #F8FAFC;
     padding: 1rem 2rem;
@@ -21,9 +19,7 @@
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
-/* =======================================
-   Library Card Application Section
-======================================= */
+/* Library Card Application Section*/
 .application {
     display: flex;
     justify-content: space-between;
@@ -151,9 +147,7 @@
     }
 }
 
-/* =======================================
-    Recommended Books Section
-======================================= */
+/*Recommended Books Section*/
 .recommendations {
     background-color: #F8FAFC;
     padding: 2rem;
