@@ -224,7 +224,7 @@
         width: 100%;
     }
 
-    /*.search {*/
-    /*    margin-top: 4rem;*/
-    /*}*/
+    .search {
+        margin-top: 3rem;
+    }
 }
