@@ -33,40 +33,40 @@
     <section class="application">
         <h2 class="application__title">Card Application</h2>
         <form class="application__form">
-            <section class="form__row">
-                <section class="form__group">
-                    <label>First Name</label>
-                    <input type="text">
-                </section>
-                <section class="form__group">
-                    <label>Last Name</label>
-                    <input type="text">
-                </section>
-            </section>
 
-            <section class="form__row">
-                <section class="form__group">
-                    <label>Zip Code</label>
-                    <input type="text">
-                </section>
-                <section class="form__group">
-                    <label>Address</label>
-                    <input type="text">
-                </section>
-            </section>
+                <fieldset class="form__row">
+                    <div class="form__group">
+                        <label>First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form__group">
+                        <label>Last Name</label>
+                        <input type="text">
+                    </div>
+                </fieldset>
 
-            <section class="form__row">
-                <section class="form__group">
-                    <label>Phone Num</label>
-                    <input type="text">
-                </section>
-                <section class="form__group">
-                    <label>Email</label>
-                    <input type="email">
-                </section>
-            </section>
+                <fieldset class="form__row">
+                    <div class="form__group">
+                        <label>Zip Code</label>
+                        <input type="text">
+                    </div>
+                    <div class="form__group">
+                        <label>Address</label>
+                        <input type="text">
+                    </div>
+                </fieldset>
 
-            <button type="submit" class="btn">Submit</button>
+                <fieldset class="form__row">
+                    <div class="form__group">
+                        <label>Phone Num</label>
+                        <input type="text">
+                    </div>
+                    <div class="form__group">
+                        <label>Email</label>
+                        <input type="email">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn">Submit</button>
         </form>
 
         <aside class="application__side">
@@ -83,12 +83,11 @@
     <section class="recommendations">
         <h2>Available Books</h2>
         <section class="book__grid">
-
             <!-- Book 1 -->
             <article class="book__card">
-                <section class="book__image" style="background-image: url('imgs/books1.jpg');
+                <figure class="book__image" style="background-image: url('imgs/books1.jpg');
                     background-size: cover; background-position: center;">
-                </section>
+                </figure>
                 <p><strong>Python Crash Course</strong></p>
                 <p>Author: Eric Matthes</p>
                 <p>ISBN: 9781593279288</p>
@@ -99,17 +98,17 @@
                 <p class="book__desc">
                     A hands-on introduction to Python — ideal for self-learners.
                 </p>
-                <section class="book__buttons">
+                <div class="book__buttons">
                     <button>Details</button>
                     <button>Reserve</button>
-                </section>
+                </div>
             </article>
 
             <!-- Book 2 -->
             <article class="book__card">
-                <section class="book__image" style="background-image: url('imgs/books2.jpg');
+                <figure class="book__image" style="background-image: url('imgs/books2.jpg');
                     background-size: cover; background-position: center;">
-                </section>
+                </figure>
                 <p><strong>The Great Gatsby</strong></p>
                 <p>Author: F. Scott Fitzgerald</p>
                 <p>ISBN: 9780743273565</p>
@@ -120,17 +119,17 @@
                 <p class="book__desc">
                     A timeless story of love and ambition set in the roaring twenties.
                 </p>
-                <section class="book__buttons">
+                <div class="book__buttons">
                     <button>Details</button>
                     <button>Reserve</button>
-                </section>
+                </div>
             </article>
 
             <!-- Book 3 -->
             <article class="book__card">
-                <section class="book__image" style="background-image: url('imgs/books3.jpg');
+                <figure class="book__image" style="background-image: url('imgs/books3.jpg');
                     background-size: cover; background-position: center;">
-                </section>
+                </figure>
                 <p><strong>The Adventures of Sherlock Holmes</strong></p>
                 <p>Author: Sir Arthur Conan Doyle</p>
                 <p>ISBN: 9780141034379</p>
@@ -141,17 +140,17 @@
                 <p class="book__desc">
                     Twelve thrilling cases featuring the world’s greatest detective.
                 </p>
-                <section class="book__buttons">
+                <div class="book__buttons">
                     <button>Details</button>
                     <button>Reserve</button>
-                </section>
+                </div>
             </article>
 
             <!-- Book 4 -->
             <article class="book__card">
-                <section class="book__image" style="background-image: url('imgs/books4.jpg');
+                <figure class="book__image" style="background-image: url('imgs/books4.jpg');
                     background-size: cover; background-position: center;">
-                </section>
+                </figure>
                 <p><strong>The Mind Garden: How Habits Shape Who We Become</strong></p>
                 <p>Author: Dr. Lillian Moore</p>
                 <p>ISBN: 9781987654321</p>
@@ -162,10 +161,10 @@
                 <p class="book__desc">
                     This book explores how small habits shape our identity.
                 </p>
-                <section class="book__buttons">
+                <div class="book__buttons">
                     <button>Details</button>
                     <button>Reserve</button>
-                </section>
+                </div>
             </article>
         </section>
     </section>
