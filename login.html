@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<!-- ===== Header ===== -->
+<!-- Header -->
 <header class="header">
     <h1 class="header__logo">Vallejo Public Library</h1>
     <nav>
@@ -23,35 +23,42 @@
     </nav>
 </header>
 
-<!-- ===== Main Content ===== -->
+<!--Main Content-->
 <main class="login">
     <section class="login__container">
         <h2 class="login__title">Library Account Login</h2>
-        <p class="login__subtitle">Access your borrowed books, due dates, and recommendations.</p>
+        <p class="login__subtitle">
+            Access your borrowed books, due dates, and recommendations.
+        </p>
 
-        <form class="login__form">
-            <section class="form__group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </section>
+        <form class="login__form" action="#">
+            <fieldset class="form__fieldset">
+                <legend><strong>Login Information</strong></legend>
 
-            <section class="form__group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
-            </section>
+                <div class="form__group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+            </fieldset>
 
             <button type="submit" class="btn">Login</button>
 
-            <section class="login__links">
+            <div class="login__links">
                 <a href="#">Forgot Password?</a>
                 <span> | </span>
                 <a href="#">Create an Account</a>
-            </section>
+            </div>
         </form>
     </section>
 </main>
 
-<!-- ===== Footer ===== -->
+
+<!-- Footer -->
 <footer class="footer">
     <section class="footer__contact">
         <h3>Address and Contact</h3>
