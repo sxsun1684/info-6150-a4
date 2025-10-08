@@ -32,51 +32,66 @@
     <!-- Card Application -->
     <section class="application">
         <h2 class="application__title">Card Application</h2>
+
         <form class="application__form">
 
-                <fieldset class="form__row">
+            <fieldset class="form__fieldset">
+                <legend><strong>Personal Information</strong></legend>
+                <div class="form__row">
                     <div class="form__group">
-                        <label>First Name</label>
-                        <input type="text">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" name="first-name">
                     </div>
                     <div class="form__group">
-                        <label>Last Name</label>
-                        <input type="text">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" name="last-name">
                     </div>
-                </fieldset>
+                </div>
+            </fieldset>
 
-                <fieldset class="form__row">
+            <fieldset class="form__fieldset">
+                <legend><strong>Address Information</strong></legend>
+                <div class="form__row">
                     <div class="form__group">
-                        <label>Zip Code</label>
-                        <input type="text">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" type="text" name="zip">
                     </div>
                     <div class="form__group">
-                        <label>Address</label>
-                        <input type="text">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" name="address">
                     </div>
-                </fieldset>
+                </div>
+            </fieldset>
 
-                <fieldset class="form__row">
+            <fieldset class="form__fieldset">
+                <legend><strong>Contact Information</strong></legend>
+                <div class="form__row">
                     <div class="form__group">
-                        <label>Phone Num</label>
-                        <input type="text">
+                        <label for="phone">Phone Num</label>
+                        <input id="phone" type="text" name="phone">
                     </div>
                     <div class="form__group">
-                        <label>Email</label>
-                        <input type="email">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email">
                     </div>
-                </fieldset>
-                <button type="submit" class="btn">Submit</button>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn">Submit</button>
         </form>
 
         <aside class="application__side">
             <h3>Already Have a Card?</h3>
             <p><a href="login.html">Jump to Login</a></p>
-            <p><strong>Instruction:</strong> Please log in using the email address you registered with the Vallejo
-                Public Library. If this is your first time, please click “Create an Account” to register for a new
-                library card.</p>
+            <p>
+                <strong>Instruction:</strong>
+                Please log in using the email address you registered with the Vallejo
+                Public Library. If this is your first time, please click “Create an Account”
+                to register for a new library card.
+            </p>
         </aside>
     </section>
+
 
     <!-- Recommendations -->
     <!-- Book Section -->
