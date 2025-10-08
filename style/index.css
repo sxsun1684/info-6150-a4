@@ -83,11 +83,11 @@ main {
 }
 
 .hero__image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* Keep aspect ratio while filling space */
-  max-height: 450px; /* Prevent overly tall banners */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Keep aspect ratio while filling space */
+    max-height: 450px; /* Prevent overly tall banners */
 }
 
 /* =======================================
@@ -148,15 +148,15 @@ main {
    Footer Section (Fixed at Bottom)
 ======================================= */
 .footer {
-  position: static; /* footer will follow page content */
-  width: 100%;
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 2rem;
-  border-top: 3px solid var(--secondary-color);
-  color: #fff;
+    position: static; /* footer will follow page content */
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    border-top: 3px solid var(--secondary-color);
+    color: #fff;
 }
 
 
@@ -204,6 +204,12 @@ button:hover,
 .btn:hover {
     background-color: #EA580C; /* Slightly darker on hover */
     transform: scale(1.03);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Text inputs and search bars */
